@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+'use strict';
+const Switchbot = require('../index');
+const switchbot = Switchbot(process.argv[2]);
+switchbot[process.argv[3] || "press"]();
+
