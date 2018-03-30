@@ -6,11 +6,12 @@ const trigger = (triggerCommand, address) => {
         press: "570100"
     }
     return new Promise((resolve, reject) => {
-        if (!command[command]) {
-            reject("no such command [" + command + "]");
+        if (!command[triggerCommand]) {
+            reject("no such command [" + triggerCommand + "]");
+            return;
         }
         if (!triggerCommand) {
-            triggerCommand = " press"
+            triggerCommand = "press"
         }
         const gatttool = spawn('gatttool', ['-b', address, '-t', 'random', '-I'])
         var connectSended = false;

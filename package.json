@@ -1,6 +1,6 @@
 {
   "name": "switchbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "switchbot controller (unofficeal)\nrequires gatttool",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,16 @@
   },
   "keywords": ["switchbot"],
   "author": "ukiuni",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
   "bin": {
-    "switch": "bin/switch"
+    "switchbot": "bin/switchbot"
+  },
+  "bugs": {
+    "url": "https://github.com/ukiuni/Switchbot/issues"
+  },
+  "homepage": "https://github.com/ukiuni/Switchbot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukiuni/Switchbot.git"
   }
 }
