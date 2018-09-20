@@ -40,13 +40,13 @@ const trigger = (triggerCommand, address) => {
 module.exports = (address) => {
   return {
     "turnOn" : () => {
-       trigger("turnOn", address);
+       return trigger("turnOn", address);
     },
     "turnOff" : () => {
-       trigger("turnOff", address);
+       return trigger("turnOff", address);
     },
     "press" : () => {
-       trigger("press", address);
+       return trigger("press", address);
     }
   }
 
